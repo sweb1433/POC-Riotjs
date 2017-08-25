@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Conditional Rendering</title>
+	
+	<script type="riot/tag" src="./tbf.html"></script>
+	<script type="riot/tag" src="./checkboxfield.html"></script>
+	<script src="./bower_components/riot/riot+compiler.min.js"></script>
+</head>
+<body>
+		<form>
+			<tbf name="first_name" label="first name"  value="Joker"></tbf>
+			<checkboxfield name="has_middle_name" label="has middle name" checked="true"></checkboxfield>
+		</form>
+
+	<script type="text/javascript">
+	riot.mount('*');
+	</script>
+</body>
+</html>
