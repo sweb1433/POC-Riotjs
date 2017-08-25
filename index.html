@@ -11,8 +11,8 @@
 <mytag> 
 	<h1> You've Selected {value} </h1>
 	<select onchange={change}>
-		<option each={value, label in opts.valueList} value={ value }>
-			{ label }
+		<option each={obj, index in opts.valueList} value={ obj.value }>
+			{ obj.label }
 		</option>
 	</select>
 	var self = this;
@@ -26,12 +26,13 @@
 <script src="./bower_components/riot/riot+compiler.min.js"></script>
 
 <script type="text/javascript">
-	riot.mount('mytag',{
-		valueList: {
-			'1': 'One',
-			'2': 'two',
-			'3': 'Three'
-		}
+	riot.mount('mytag', {
+		valueList: [
+			{value:'', label:'Select a Value'},
+			{value:'1', label:'One'},
+			{value:'2', label:'Two'},
+			{value:'3', label:'Three'}
+		]
 	});
 </script>
 
