@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<mytag></mytag>
+
+<script type="riot/tag">
+<mytag> 
+	<h1> You've Selected {value} </h1>
+	<select onchange={change}>
+		<option each={value, label in opts.valueList} value={ value }>
+			{ label }
+		</option>
+	</select>
+	var self = this;
+	this.value='NOTHING!!!' ;
+	this.change=function(e){
+		self.value = e.target.value;
+	};
+</mytag>
+</script>
+
+<script src="./bower_components/riot/riot+compiler.min.js"></script>
+
+<script type="text/javascript">
+	riot.mount('mytag',{
+		valueList: {
+			'1': 'One',
+			'2': 'two',
+			'3': 'Three'
+		}
+	});
+</script>
+
+</body>
+</html>
