@@ -9,18 +9,25 @@
 
 <script type="riot/tag">
 <mytag> 
+	
 	<h1> You've Selected {value} </h1>
+	
 	<select onchange={change}>
+		
 		<option each={obj, index in opts.valueList} value={ obj.value }>
 			{ obj.label }
 		</option>
+		
 	</select>
+
 	var self = this;
 	this.value='NOTHING!!!' ;
 	this.change=function(e){
 		self.value = e.target.value;
 	};
+
 </mytag>
+
 </script>
 
 <script src="./bower_components/riot/riot+compiler.min.js"></script>
