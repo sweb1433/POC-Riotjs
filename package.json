@@ -1,0 +1,24 @@
+{
+  "name": "conditional-rendering-in-riotjs",
+  "version": "1.0.0",
+  "description": "Conditional rendering in riot js",
+  "main": "index2.html",
+  "scripts": {
+    "test": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sweb1433/POC-Riotjs.git"
+  },
+  "keywords": [
+    "rendering",
+    "in",
+    "riot"
+  ],
+  "author": "Sushant Verma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sweb1433/POC-Riotjs/issues"
+  },
+  "homepage": "https://github.com/sweb1433/POC-Riotjs#readme"
+}
